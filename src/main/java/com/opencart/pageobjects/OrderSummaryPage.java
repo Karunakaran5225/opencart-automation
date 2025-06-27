@@ -18,12 +18,12 @@ public class OrderSummaryPage extends BaseClass {
 	WebElement confirmOrderBtn;
 
 	public OrderSummaryPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public OrderConfirmationPage clickonConfirmOrder() {
 //		Action.fluentWait(driver, confirmOrderBtn, 10);
-		Action.click(driver, confirmOrderBtn);
+		Action.click(getDriver(), confirmOrderBtn);
 		return new OrderConfirmationPage();
 	}
 

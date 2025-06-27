@@ -28,7 +28,7 @@ public class AccountRegisterPageTest extends BaseClass {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		getDriver().quit();
 	}
 
 	@Test

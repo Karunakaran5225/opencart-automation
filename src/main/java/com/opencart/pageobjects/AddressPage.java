@@ -22,13 +22,13 @@ public class AddressPage extends BaseClass {
 	WebElement dropDown;
 
 	public AddressPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public ShippingPage clickOnAddress() {
-		Action.fluentWait(driver, dropDown, 10);
-		Action.click(driver, selectAddressOtn);
-		Action.click(driver, dropDown);
+		Action.fluentWait(getDriver(), dropDown, 10);
+		Action.click(getDriver(), selectAddressOtn);
+		Action.click(getDriver(), dropDown);
 		Action.selectByVisibleText("Karunakaran Vijayakumar, Chennai, Chennai, Tamil Nadu, India", dropDown);
 		return new ShippingPage();
 	}

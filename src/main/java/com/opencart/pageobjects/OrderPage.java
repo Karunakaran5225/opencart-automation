@@ -24,7 +24,7 @@ public class OrderPage extends BaseClass {
 	WebElement proceedToCheckOut;
 
 	public OrderPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public double getUnitPrice() throws InterruptedException {
@@ -44,7 +44,7 @@ public class OrderPage extends BaseClass {
 	}
 
 	public LoginPage clickOnCheckOut() {
-		Action.click(driver, proceedToCheckOut);
+		Action.click(getDriver(), proceedToCheckOut);
 		return new LoginPage();
 	}
 

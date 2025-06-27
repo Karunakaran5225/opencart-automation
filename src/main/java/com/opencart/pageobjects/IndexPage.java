@@ -27,34 +27,34 @@ public class IndexPage extends BaseClass {
 	WebElement searchButton;
 
 	public IndexPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public LoginPage clickLogin() throws Throwable {
-		Action.click(driver, accountDropdown);
-		Action.click(driver, loginLink);
+		Action.click(getDriver(), accountDropdown);
+		Action.click(getDriver(), loginLink);
 		return new LoginPage();
 	}
 
 	public boolean validateLogo() throws Throwable {
-		return Action.isDisplayed(driver, opencartLogo);
+		return Action.isDisplayed(getDriver(), opencartLogo);
 	}
 
 	public String getOpenCartTitle() {
-		String opencartTitle = driver.getTitle();
+		String opencartTitle = getDriver().getTitle();
 		return opencartTitle;
 	}
 
 	public SearchResultPage searchProduct(String productName) throws Throwable {
 		Action.type(searchProductBox, productName);
-		Action.click(driver, searchButton);
+		Action.click(getDriver(), searchButton);
 		return new SearchResultPage();
 
 	}
 	
 	public RegisterPage clickRegister() throws Throwable {
-	    Action.click(driver, accountDropdown);
-	    Action.click(driver, registerLink);
+	    Action.click(getDriver(), accountDropdown);
+	    Action.click(getDriver(), registerLink);
 	    return new RegisterPage();
 	}
 

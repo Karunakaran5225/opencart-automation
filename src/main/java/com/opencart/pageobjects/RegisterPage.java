@@ -36,7 +36,7 @@ public class RegisterPage extends BaseClass {
 	WebElement continueBtn;
 
 	public RegisterPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public HomePage createAccount(String fName, String lName, String email, String pswd) {
@@ -44,14 +44,14 @@ public class RegisterPage extends BaseClass {
 		Action.type(lastName, lName);
 		Action.type(emailId, email);
 		Action.type(passWord, pswd);
-		Action.click(driver, checkbox);
-		Action.click(driver, continueBtn);
+		Action.click(getDriver(), checkbox);
+		Action.click(getDriver(), continueBtn);
 		return new HomePage();
 
 	}
 
 	public boolean validateRegisterPage() {
-		return Action.isDisplayed(driver, formTitle);
+		return Action.isDisplayed(getDriver(), formTitle);
 	}
 
 }

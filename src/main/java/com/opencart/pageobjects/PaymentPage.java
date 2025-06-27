@@ -21,13 +21,13 @@ public class PaymentPage extends BaseClass{
 	WebElement continueBtn;
 	
 	public PaymentPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public OrderSummaryPage choosePaymentMethod() {
-		Action.click(driver, paymentMethod);
-		Action.fluentWait(driver, paymentMethod, 10);
-		Action.click(driver, continueBtn);
+		Action.click(getDriver(), paymentMethod);
+		Action.fluentWait(getDriver(), paymentMethod, 10);
+		Action.click(getDriver(), continueBtn);
 		return new OrderSummaryPage();
 	}
 

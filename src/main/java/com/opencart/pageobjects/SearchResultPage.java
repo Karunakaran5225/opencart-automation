@@ -19,15 +19,15 @@ public class SearchResultPage extends BaseClass {
 	WebElement productResult;
 
 	public SearchResultPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public boolean isProductAvailable() {
-		return Action.isDisplayed(driver, productResult);
+		return Action.isDisplayed(getDriver(), productResult);
 	}
 	
 	public AddToCart clickOnProduct(){
-		Action.click(driver, productResult);
+		Action.click(getDriver(), productResult);
 		return new AddToCart();
 		
 	}

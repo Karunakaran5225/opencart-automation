@@ -26,7 +26,7 @@ public class SearchResultPageTest extends BaseClass {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		getDriver().quit();
 	}
 
 	@Test

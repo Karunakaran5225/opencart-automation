@@ -22,20 +22,20 @@ public class HomePage extends BaseClass {
 	WebElement OrderHistory;
 
 	public HomePage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public boolean validateMyWishList() {
-		return Action.isDisplayed(driver, myWishList);
+		return Action.isDisplayed(getDriver(), myWishList);
 
 	}
 
 	public boolean ValidateOrderHistory() {
-		return Action.isDisplayed(driver, OrderHistory);
+		return Action.isDisplayed(getDriver(), OrderHistory);
 	}
 
 	public String getCurrURL() {
-		String homePageURL=driver.getCurrentUrl();
+		String homePageURL=getDriver().getCurrentUrl();
 		return homePageURL;
 	}
 

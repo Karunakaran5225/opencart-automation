@@ -22,13 +22,13 @@ public class ShippingPage extends BaseClass {
 	WebElement continueBtn;
 
 	public ShippingPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public PaymentPage chooseShippingMethod() {
-		Action.fluentWait(driver, continueBtn, 10);
-		Action.click(driver, shippingMethod);
-		Action.click(driver, continueBtn);
+		Action.fluentWait(getDriver(), continueBtn, 10);
+		Action.click(getDriver(), shippingMethod);
+		Action.click(getDriver(), continueBtn);
 		return new PaymentPage();
 	}
 

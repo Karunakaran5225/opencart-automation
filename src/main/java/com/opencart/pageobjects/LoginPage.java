@@ -37,21 +37,21 @@ public class LoginPage extends BaseClass {
 	
 
 	public LoginPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public HomePage login(String uname, String pswd) throws Throwable {
 		Action.type(username, uname);
 		Action.type(password, pswd);
-		Action.click(driver, signInBtn);
+		Action.click(getDriver(), signInBtn);
 		return new HomePage();
 	}
 	
 	public AddressPage login1(String uname, String pswd) throws Throwable {
-		Action.click(driver, logIn);
+		Action.click(getDriver(), logIn);
 		Action.type(username, uname);
 		Action.type(password, pswd);
-		Action.click(driver, signInBtn);
+		Action.click(getDriver(), signInBtn);
 		return new AddressPage();
 	}
 	
