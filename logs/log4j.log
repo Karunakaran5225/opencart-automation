@@ -1,0 +1,48 @@
+2025-08-10 01:24:48 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-10 01:24:49 INFO  Log:21 - User is going to login
+2025-08-10 01:24:50 INFO  Log:21 - User is going to enter username and password
+2025-08-10 01:26:12 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-10 01:26:12 INFO  Log:21 - User is going to login
+2025-08-10 01:26:13 INFO  Log:21 - User is going to enter username and password
+2025-08-10 01:26:13 INFO  Log:21 - Verifying if user is able to login
+2025-08-10 01:26:13 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-11 20:47:14 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-11 20:47:14 INFO  Log:21 - User is going to login
+2025-08-11 20:47:16 INFO  Log:21 - User is going to enter username and password
+2025-08-11 20:47:17 INFO  Log:21 - Verifying if user is able to login
+2025-08-11 20:47:17 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-11 20:47:20 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-11 20:47:20 INFO  Log:21 - User is going to login
+2025-08-11 20:47:22 INFO  Log:21 - User is going to enter username and password
+2025-08-11 20:47:23 INFO  Log:21 - Verifying if user is able to login
+2025-08-11 20:47:23 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-11 21:01:21 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-11 21:01:21 INFO  Log:21 - User is going to login
+2025-08-11 21:01:22 INFO  Log:21 - User is going to enter username and password
+2025-08-11 21:01:23 INFO  Log:21 - Verifying if user is able to login
+2025-08-11 21:01:23 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-11 21:01:25 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-11 21:01:25 INFO  Log:21 - User is going to login
+2025-08-11 21:01:26 INFO  Log:21 - User is going to enter username and password
+2025-08-11 21:01:28 INFO  Log:21 - Verifying if user is able to login
+2025-08-11 21:01:28 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-11 22:24:55 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-11 22:24:55 INFO  Log:21 - User is going to login
+2025-08-11 22:24:56 INFO  Log:21 - User is going to enter username and password
+2025-08-11 22:24:57 INFO  Log:21 - Verifying if user is able to login
+2025-08-11 22:24:57 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-11 22:25:00 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-11 22:25:00 INFO  Log:21 - User is going to login
+2025-08-11 22:25:01 INFO  Log:21 - User is going to enter username and password
+2025-08-11 22:25:02 INFO  Log:21 - Verifying if user is able to login
+2025-08-11 22:25:02 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-12 10:57:39 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-12 10:57:39 INFO  Log:21 - User is going to login
+2025-08-12 10:57:40 INFO  Log:21 - User is going to enter username and password
+2025-08-12 10:57:41 INFO  Log:21 - Verifying if user is able to login
+2025-08-12 10:57:41 INFO  Log:14 - =====================================loginTest ended TEST END=========================================
+2025-08-12 10:57:45 INFO  Log:10 - =====================================loginTest TEST START=========================================
+2025-08-12 10:57:45 INFO  Log:21 - User is going to login
+2025-08-12 10:57:46 INFO  Log:21 - User is going to enter username and password
+2025-08-12 10:57:47 INFO  Log:21 - Verifying if user is able to login
+2025-08-12 10:57:47 INFO  Log:14 - =====================================loginTest ended TEST END=========================================

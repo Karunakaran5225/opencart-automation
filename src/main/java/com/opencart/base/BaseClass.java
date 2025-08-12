@@ -1,11 +1,14 @@
 package com.opencart.base;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,12 +25,17 @@ public class BaseClass {
 //	Declare ThreadLocal Driver
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
+	@BeforeSuite(groups= {"Smoke","Sanity","Regression"})
+	public void beforeSuite() {
+		DOMConfigurator.configure("log4j.xml");
+	}
+
 	public static WebDriver getDriver() {
 //		Get Driver from threadLocalmap
 		return driver.get();
 	}
 
-	@BeforeTest
+	@BeforeTest(groups= {"Smoke","Sanity","Regression"})
 	public void loadConfig() {
 		try {
 			prop = new Properties();
@@ -43,9 +51,10 @@ public class BaseClass {
 		}
 	}
 
-	public static void launchApp() {
+	
+	public static void launchApp(String browserName) {
 		WebDriverManager.chromedriver().setup();
-		String browserName = prop.getProperty("browser");
+//		String browserName = prop.getProperty("browser");
 
 		if (browserName.contains("Chrome")) {
 //			driver = new ChromeDriver();
@@ -56,10 +65,9 @@ public class BaseClass {
 			driver.set(new FirefoxDriver());
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
-			//	driver = new EdgeDriver();
+			// driver = new EdgeDriver();
 			driver.set(new EdgeDriver());
-		}
-		else {
+		} else {
 			throw new RuntimeException("Unsupported browser: " + browserName);
 		}
 		getDriver().manage().window().maximize();

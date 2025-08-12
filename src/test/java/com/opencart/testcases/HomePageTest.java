@@ -6,6 +6,7 @@ package com.opencart.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.opencart.base.BaseClass;
@@ -21,17 +22,18 @@ public class HomePageTest extends BaseClass {
 	LoginPage loginPage;
 	HomePage homePage;
 	
-	@BeforeMethod
-	public void setup() {
-		launchApp();
+	@Parameters("browser")
+	@BeforeMethod(groups= {"Smoke","Sanity","Regression"})
+	public void setup(String browser) {
+		launchApp(browser);
 	}
 
-	@AfterMethod
+	@AfterMethod(groups= {"Smoke","Sanity","Regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}
 
-	@Test
+	@Test(groups="Smoke")
 	public void wishListTest() throws Throwable {
 		indexPage = new IndexPage();
 		loginPage=indexPage.clickLogin();
@@ -41,7 +43,7 @@ public class HomePageTest extends BaseClass {
 		
 	}
 	
-	@Test
+	@Test(groups="Smoke")
 	public void orderHistoryandDetailsTest() throws Throwable {
 		indexPage = new IndexPage();
 		loginPage=indexPage.clickLogin();

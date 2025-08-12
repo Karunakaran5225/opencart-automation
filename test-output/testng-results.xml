@@ -1,29 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="10" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-27T04:29:04 IST" name="Default suite" finished-at="2025-06-27T04:29:48 IST" duration-ms="43637">
+  <suite started-at="2025-08-12T10:58:20 IST" name="Suite" finished-at="2025-08-12T10:59:34 IST" duration-ms="73733">
     <groups>
+      <group name="Sanity">
+        <method signature="AddToCartPageTest.addToCartTest()[pri:0, instance:com.opencart.testcases.AddToCartPageTest@1fb700ee]" name="addToCartTest" class="com.opencart.testcases.AddToCartPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="AddToCartPageTest.addToCartTest()[pri:0, instance:com.opencart.testcases.AddToCartPageTest@1fb700ee]" name="addToCartTest" class="com.opencart.testcases.AddToCartPageTest"/>
+        <method signature="EndToEndTest.endToEndTest()[pri:0, instance:com.opencart.testcases.EndToEndTest@5552768b]" name="endToEndTest" class="com.opencart.testcases.EndToEndTest"/>
+        <method signature="OrderPageTest.verifyTotalPrice()[pri:0, instance:com.opencart.testcases.OrderPageTest@1329eff]" name="verifyTotalPrice" class="com.opencart.testcases.OrderPageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-06-27T04:29:04 IST" name="Default test" finished-at="2025-06-27T04:29:48 IST" duration-ms="43637">
+    <test started-at="2025-08-12T10:58:20 IST" name="Test_All" finished-at="2025-08-12T10:59:34 IST" duration-ms="73733">
       <class name="com.opencart.testcases.EndToEndTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.opencart.testcases.EndToEndTest@2d2ffcb7]" started-at="2025-06-27T04:29:04 IST" name="loadConfig" finished-at="2025-06-27T04:29:04 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.opencart.testcases.EndToEndTest@5552768b]" started-at="2025-08-12T10:58:20 IST" name="beforeSuite" finished-at="2025-08-12T10:58:20 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.opencart.testcases.EndToEndTest@5552768b]" started-at="2025-08-12T10:58:20 IST" name="loadConfig" finished-at="2025-08-12T10:58:20 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.testcases.EndToEndTest@2d2ffcb7]" started-at="2025-06-27T04:29:04 IST" name="setup" finished-at="2025-06-27T04:29:06 IST" duration-ms="2426" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.EndToEndTest@5552768b]" started-at="2025-08-12T10:58:20 IST" name="setup" finished-at="2025-08-12T10:58:23 IST" duration-ms="3063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="endToEndTest()[pri:0, instance:com.opencart.testcases.EndToEndTest@2d2ffcb7]" started-at="2025-06-27T04:29:06 IST" name="endToEndTest" finished-at="2025-06-27T04:29:47 IST" duration-ms="40904" status="PASS">
+        <test-method signature="endToEndTest()[pri:0, instance:com.opencart.testcases.EndToEndTest@5552768b]" started-at="2025-08-12T10:58:23 IST" name="endToEndTest" finished-at="2025-08-12T10:59:12 IST" duration-ms="48756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.EndToEndTest@2d2ffcb7]" started-at="2025-06-27T04:29:47 IST" name="tearDown" finished-at="2025-06-27T04:29:48 IST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.EndToEndTest@5552768b]" started-at="2025-08-12T10:59:12 IST" name="tearDown" finished-at="2025-08-12T10:59:13 IST" duration-ms="768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.testcases.EndToEndTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.opencart.testcases.OrderPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.OrderPageTest@1329eff]" started-at="2025-08-12T10:59:13 IST" name="setup" finished-at="2025-08-12T10:59:15 IST" duration-ms="2309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTotalPrice()[pri:0, instance:com.opencart.testcases.OrderPageTest@1329eff]" started-at="2025-08-12T10:59:15 IST" name="verifyTotalPrice" finished-at="2025-08-12T10:59:27 IST" duration-ms="11696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalPrice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.OrderPageTest@1329eff]" started-at="2025-08-12T10:59:27 IST" name="tearDown" finished-at="2025-08-12T10:59:27 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.OrderPageTest -->
+      <class name="com.opencart.testcases.AddToCartPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.opencart.testcases.AddToCartPageTest@1fb700ee]" started-at="2025-08-12T10:59:27 IST" name="setup" finished-at="2025-08-12T10:59:29 IST" duration-ms="2038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCartTest()[pri:0, instance:com.opencart.testcases.AddToCartPageTest@1fb700ee]" started-at="2025-08-12T10:59:29 IST" name="addToCartTest" finished-at="2025-08-12T10:59:33 IST" duration-ms="4285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.testcases.AddToCartPageTest@1fb700ee]" started-at="2025-08-12T10:59:33 IST" name="tearDown" finished-at="2025-08-12T10:59:34 IST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.testcases.AddToCartPageTest -->
+    </test> <!-- Test_All -->
+  </suite> <!-- Suite -->
 </testng-results>
